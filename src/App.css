@@ -1,0 +1,174 @@
+*{
+    font-family: 'Bebas Neue';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.taskcontainer::-webkit-scrollbar {
+    width: 5px;
+  }
+
+.taskcontainer::-webkit-scrollbar-track {
+    background: rgb(179, 177, 177);
+    border-radius: 10px;
+}
+
+.taskcontainer::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 10px;
+  }
+
+.taskcontainer::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+    border-radius: 10px;
+  }
+
+.taskcontainer::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+  }
+
+.container{
+    background-color: rgba(255, 225, 2, 0.167); 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.mainheading{
+    position: absolute;
+    top: 5vh;
+    font-size: 3.2rem;
+    font-family:'Rubik Bubbles';
+    color: #ff6f69;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(255, 225, 2, 0.167); 
+    box-shadow: rgba(240, 72, 46, 0.4) -5px 5px, rgba(255, 85, 13, 0.3) -10px 10px, rgba(239, 11, 11, 0.2) -15px 15px, rgba(240, 56, 46, 0.1) -20px 20px, rgba(222, 62, 3, 0.192) -25px 25px;    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    left: 0;
+    right: 0;
+    top: 2vh;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    height: 70vh;
+    border-radius: 20px;
+    
+}
+
+.taskcontainer{
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    gap: 3.2px;
+    width: 80%;
+    height: 50vh;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.taskform{
+    margin-top: 1vh;
+    height: fit-content;
+    width: 60%;
+    position: sticky;
+}
+
+.taskform input {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    border-radius:20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    
+    &:focus{
+        outline: none;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+}
+
+
+.taskform input::placeholder{
+    color: rgba(108, 187, 213, 0.813);
+    font-weight: bolder;
+    line-height: 4vh;
+    font-size: 2rem;
+}
+
+.taskcard, .completedtaskcard{
+    background-color:white;
+    border: 3px solid #ffeead;
+    font-family: 'Bebas Neue';
+    color: #ff6f69;
+    width: 100%;
+    padding: 2px 6px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    overflow: hidden;
+}
+
+.taskcard h2,
+.completedtaskcard h2{
+    font-size: 2rem;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.completedtaskcard h2{
+    text-decoration: line-through solid red;
+}
+
+.iconscontainer{
+    font-size: 1.5rem;
+    cursor:default;
+}
+
+.iconscontainer svg{
+    margin-left: 5px;
+}
+
+.editinputconatiner{
+    background-color:#ff6f69;
+    border: 3px solid #ffeead;
+    color:white;
+    padding: 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+}
+.editinput{
+    width: 100%;
+    background: transparent;
+    border: none;
+    color:white;
+    font-size: 2rem;
+}
+
+.editinputconatiner svg{
+    font-size: 1.5rem;
+    cursor:default;
+    margin: 5px;
+}
